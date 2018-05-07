@@ -10,6 +10,10 @@
 		
 		<h1><?php echo $judul; ?></h1>
 
+		<?php echo anchor('crud/input', 'Tambah Siswa'); ?>
+
+		<br><br>
+
 		<table border="1">
 			<tr>
 				<th>No</th>
@@ -23,7 +27,7 @@
 				<td><?php echo $i++ ?></td>
 				<td><?php echo $siswa->nama_siswa ?></td>
 				<td><?php echo $siswa->kelas ?></td>
-				<td><?php echo anchor('edit/'.$siswa->id_siswa, 'Edit'); ?> | <?php echo anchor('delete/'.$siswa->id_siswa, 'Delete'); ?>
+				<td><?php echo anchor('crud/edit/'.$siswa->id_siswa, 'Edit'); ?> | <?php echo anchor('crud/delete/'.$siswa->id_siswa, 'Delete'); ?>
 					
 				</td>
 
